@@ -1,1 +1,9 @@
 https://markus.teach.cs.toronto.edu/git/csc209-2019-01/xiejiab1
+
+matlab 2c) 
+for i = 1:15
+	x = -10^(-i);
+	f = -(1-x)/(1+x) + 1/(1+2*x);
+	ff = 2x(x-1)/((1+2x)(1+x))
+	fprintf(’%10.2e %22.15e %22.15e %12.4e\n’, x, f, ff, (f-ff)/ff);
+end
